@@ -1,0 +1,3 @@
+Compile hw0-solution.tex to generate the submission.
+
+A makefile is also provided for easier compilation.
