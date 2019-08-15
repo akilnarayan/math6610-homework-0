@@ -1,0 +1,5 @@
+*.aux
+*.log
+hw0-solution.pdf
+.*.swp
+__pycache__
