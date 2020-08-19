@@ -13,10 +13,11 @@
 
 \begin{document}
 
-\title{Homework 0: Basics of submission\\MATH 6610-001, Fall 2019}
+\title{Homework 0: Basics of submission\\MATH 6610-001, Fall 2020}
 \author{Akil Narayan}
 \maketitle
 
+\noindent \underline{\textbf{Problem 1.}}\\
 The topic of this homework assignment is usage of Monte Carlo techniques to approximate the transcendental number $\pi$.  The setup is as follows: let $\rho : [-1,1]^2 \rightarrow \R$ be the uniform probability density on the square $[-1,1]^2 \subset \R^2$. I.e, $\rho(x,y) = 1/4$ if both $x$ and $y$ satisfy $|x| < 1$ and $|y| < 1$, and $\rho$ is zero otherwise. We consider the function $f$ that is the indicator of the unit ball in $\R^2$ centered at the origin:
 \begin{align*}
   f(x) &= \mathbbm{1}_R(x) = \left\{ \begin{array}{rl} 1, & x \in R, \\ 0, & x \not\in R \end{array}\right.,
@@ -38,7 +39,7 @@ To investigate the quality of this approximation, we compute statistics for the 
 
 \begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{FM_stats.pdf}
+    \includegraphics[width=0.5\textwidth]{images/FM_stats.pdf}
   \end{center}
   \caption{Quantiles (10\%, 90\%) and median for the random variable $\left| 4 F_M - \pi \right|$ as a function of $M$. Also plotted is a curve corresponding to $1/\sqrt{M}$.}\label{fig:FM}
 \end{figure}
@@ -75,7 +76,7 @@ where we have used the fact that $\mathrm{Var}(Y) = \E Y^2 - (\E Y)^2$, and that
 so that we can visually compare (normalized) histograms of $G_M$ against this function. Figure \ref{fig:CLT} shows these comparisons for three values of $M$. As $M$ is increased, the histograms visually begin to represent $\varphi(x)$ more. This verifies, at least qualitatively, that the Central Limit Theorem holds for this simulation.
 \begin{figure}
   \begin{center}
-    \includegraphics[width=\textwidth]{CLT.pdf}
+    \includegraphics[width=\textwidth]{images/CLT.pdf}
   \end{center}
   \caption{Normalized histograms of 3000 realizations of $G_M$ versus the CLT-predicted large-$M$ behavior $\varphi(x)$. Left, center, and right: $M = 10^2, 10^3$, and $10^4$, respectively.}\label{fig:CLT}
 \end{figure}
